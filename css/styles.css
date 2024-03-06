@@ -43,7 +43,7 @@
 
 body {
   color: var(--color-primery-dark);
-  background-color:var(--color-primery-light);
+  background-color: var(--color-primery-light);
   font-family: Poppins, sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -263,8 +263,9 @@ ul {
   content: "";
 }
 .chef-foto {
-    border-radius: 4px 4px 4px 200px;
-    box-shadow: -16px 16px 0 0 var(--color-primery-light), -16px 16px 0 2px var(--color-secondary-dark);
+  border-radius: 4px 4px 4px 200px;
+  box-shadow: -16px 16px 0 0 var(--color-primery-light),
+    -16px 16px 0 2px var(--color-secondary-dark);
 }
 
 /* Formats title */
@@ -313,6 +314,32 @@ ul {
   font-weight: 300;
 }
 
+/* Carousel */
+.carousel-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid var(--color-primery-dark);
+  cursor: pointer;
+}
+
+.carousel-arrow {
+  fill: var(--color-primery-dark);
+}
+
+.carousel-button:hover {
+  background-color: var(--color-primery-dark);
+}
+
+.carousel-button:hover .carousel-arrow {
+  fill: var(--color-primery-light);
+}
+
 /* Contact section */
 .contacts-title {
   margin-bottom: 16px;
@@ -330,6 +357,16 @@ ul {
   color: var(--color-brand-normal);
   /* font-size: 16px;
     font-weight: 300; */
+}
+
+.address-social {
+  fill: var(--color-primery-light);
+  /* stroke: none; */
+}
+
+.address-social:hover {
+  fill: var(--color-brand-normal);
+  /* stroke: none; */
 }
 
 .address-copyringht {
