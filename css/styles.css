@@ -254,19 +254,30 @@ ul {
 }
 
 .chefs-title {
-  max-width: 520px;
+  position: relative;
+  /*max-width: 520px;*/
   /* margin-bottom: 80px; */
   margin: 0 auto 80px;
 }
 
 .chefs-title::after,
 .chefs-title::before {
-  display: block;
+  position: absolute;
+  bottom: 24px;
+  /*display: block;*/
   width: 352px;
   /* border: 2px solid var(--color-brand-light); */
   height: 2px;
   background-color: #cfcfbc;
   content: "";
+}
+
+.chefs-title::before {
+  left: 0;
+}
+
+.chefs-title::after {
+  right: 0;
 }
 
 .chefs-list {
